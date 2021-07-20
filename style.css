@@ -1,0 +1,122 @@
+body {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url(
+        "./image/background02.jpg"
+    );
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100vh;
+}
+
+/*Adding background image to each section*/
+.one {
+    background: url(
+        "./image/01.jpg"
+    );
+}
+.two {
+    background: url(
+        "./image/02.jpg"
+    );
+}
+.three {
+    background: url(
+        "./image/03.jpg"
+    );
+}
+.four {
+    background: url(
+        "./image/04.jpg"
+    );
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 5px solid white;
+    height: 80vh;
+    cursor: pointer;
+    flex: 0.2; /*need to read the document*/
+    margin: 5px;
+    position: relative;
+    transition: all 0.7s ease-out;
+}
+
+.section.active {
+    flex: 3;
+}
+
+/*Adding content for picture*/
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgba(100, 182, 172, 0.8);
+    margin-bottom: 0.5rem;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+/* Responsive for Iphone 6,7,8+ */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) { 
+
+    body {
+        flex-direction: column;
+    }
+    .container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+}
+
+/* Responsive for Iphone 6,7,8 */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
+    body {
+        flex-direction: column;
+    }
+    .container {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        flex-direction: column;
+    }
+}
+
+/* Responsive for Ipad */
+@media only screen
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+  and (orientation:portrait) 
+{
+    body {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .container {
+        flex-direction: column;
+        height: 70vh;
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "expanding_card",
+  "version": "1.0.0",
+  "description": "This is the first project of HTML and CSS",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "author": "PhucLeon",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
